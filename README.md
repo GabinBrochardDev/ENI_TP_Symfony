@@ -42,6 +42,30 @@ Ajoutez y simplement quelques mots, pour vous assurer que votre code fonctionne 
     - Un menu de navigation contenant un lien menant vers l’accueil
     - Le favicon (fichier fourni)
 
-![IMG M03_TP01](/docs/M03_TP01.jpg "Titre de l'image")
+![IMG M03_TP01](;/docs/M03_TP01.jpg "Titre de l'image")
 
-## M04_TP01 : ()
+## M04_TP01 : Routes et contrôleurs (20/08/2024)
+>**Objectif :** Créer les différentes pages de du site (sans contenu), et de les relier entre elles.
+
+- Créer une nouvelle page "About us". Cette page est gérée dans le MainController
+et n'affiche que du lorem ipsum pour l'instant.
+- Créer un nouveau contrôleur : Wish Controller. Ce contrôleur sera responsable de
+gérer ce qui a trait aux idées de choses à faire une fois dans sa vie (wish = souhait).
+- Dans Wish Controller, créer 2 pages : u ne page "list" qui affichera la liste des choses à
+faire, et une page "detail", qui affichera les détails sur une idée de chose à faire.
+- Dans votre menu de navigation, ajouter un lien vers la page "About us" et un autre
+vers la liste des idées.
+
+>**Note 1 :**
+il n'est pas encore possible de faire un lien vers la page de détail d'une idée, puisque
+nous n'affichons pas encore la liste ! Mais nous aurons besoin d'inclure l'identifiant de l'idée
+dans l'URL de cette page détail.
+
+>**Note 2 :**
+les trois nouvelles pages d oivent chacune avoir leur méthode de contrôleur et leur
+fichier Twig.
+
+## M04_TP02 : Routes et contrôleurs (20/08/2024)
+
+
+## M05_TP01 :  (21/08/2024)
