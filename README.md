@@ -42,6 +42,6 @@ Ajoutez y simplement quelques mots, pour vous assurer que votre code fonctionne 
     - Un menu de navigation contenant un lien menant vers l’accueil
     - Le favicon (fichier fourni)
 
-![IMG M03_TP01](/tp_app/docs/M03_TP01.jpg "Titre de l'image")
+![IMG M03_TP01](/docs/M03_TP01.jpg "Titre de l'image")
 
 ## M04_TP01 : ()
