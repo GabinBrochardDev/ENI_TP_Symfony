@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}TP Bucket{% endblock %}</title>
+        <link rel="icon" href="{{ asset("img/favicon.png") }}">
+        {% block stylesheets %}
+        {% endblock %}
+
+        {% block javascripts %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+    </head>
+    <body class="d-flex flex-column"></body>
+        {# header #}
+        {% include "partials/header.html.twig" %}
+        <main class="flex-grow-1">
+            <div class="container">
+                {% block body %}{% endblock %}
+            </div>
+        </main>
+        {% include "partials/footer.html.twig" %}
+    </body>
+</html>
