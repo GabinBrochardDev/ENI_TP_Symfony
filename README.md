@@ -66,6 +66,45 @@ les trois nouvelles pages d oivent chacune avoir leur méthode de contrôleur et
 fichier Twig.
 
 ## M04_TP02 : Routes et contrôleurs (20/08/2024)
+>**Objectif :** L'objectif est d'afficher les informations sur l'équipe du site Bucket
+List dans la page About Us (créée au module 04).
+
+Les informations sur les auteurs du site sont stockées dans le fichier team.json
+et doivent le rester. Vous devez donc lire/récupérer les données depuis ce fichier, en PHP, avant de les afficher dans votre fichier Twig.
+
+Pour chacun des 3 auteurs du site, vous disposez de leurs noms de famille, prénom, date de
+naissance, URL de l'image de profil, de quoi il est le créateur et d’une description.
+
+Quelques étapes détaillées pour vous aider :
+- 1. Vous devez télécharger et stocker le fichier team.json où vous voulez dans votre
+répertoire de projet. Le plus simple est de le stocker dans un répertoire data à la racine
+du projet . On ne le stockera pas dans « public » car on ne souhaite pas qu’il soit
+disponible depuis l’extérieur.
+- 2. Dans votre contrôleur, dans la méthode aboutUs()aboutUs(), avant d'appeler la
+fonction render(), récupérez le contenu du fichier json dans une variable. Des fonctions PHP de base existent pour ça !
+
+>**Bonus :**
+>- La date de naissance doit s'afficher au format jj mm aaaa
+>- Dans Twig, afficher un emoji ❤ à côté du nom de Fabien (sans modifier le fichier json !)
 
 
-## M05_TP01 :  (21/08/2024)
+## M05_TP01 : données et Doctrine (21/08/2024)
+>**Objectif :**  
+Créer l'entité qui représente une idée et affiché les enregistrements sur une page. 
+
+1. Créer l'entité qui représente une idée et affiché les enregistrements sur une page. Cette entité (nommée Wish) doit avoir les propriétés suivantes :
+    - title (l'idée en tant que telle, 250 caractères Requis.)
+    - description (texte suivi décrivant l'idée plus en détail)
+    - author (pseudo de l'auteur . 50 caractères max. Requis.)
+    - isPublished (valeur booléenne indiquant si l'idée est actuellement visible sur le site)
+    - dateCreated (date et heure de création de l'idée)
+
+2. Configurez votre connexion à la base de données, créez la et mettez la à jour
+3. Directement d ans PHPMyAdmin, ajoutez 3 ou 4 idées, pour tester.
+4. Sur la page de liste d'idées, affichez le titre de toutes les idées publiées, de la plus récente à la plus ancienne. En cliquant sur une idée, l'utilisateur doit être mené à la page de détail de celle ci. Dans Twig, vous aurez besoin des 2 arguments de la fonction path() pour générer ces liens.
+
+
+## M05_TP02 : données et Doctrine (Fixtures et Faker) (21/08/2024)
+Pour éviter de créer manuellement des données dans la base avec PHPMyAdmin, on va utiliser
+une fixture pour ajouter quelques idées. Vous pourrez utiliser également un faker si vous le
+souhaiter.
